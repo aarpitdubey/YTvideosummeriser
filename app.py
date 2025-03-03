@@ -57,7 +57,7 @@ def get_video_info(url):
 
 def get_summary(prompt):
     try:
-        chat = ChatOpenAI(model_name="gpt-3.5-turbo-16k", temperature=0.7)
+        chat = ChatOpenAI(model_name="gpt-4o-mini", temperature=0.7)
         messages = [
             SystemMessage(content="You are a helpful assistant that summarizes YouTube video transcripts.and you have to give answer in point ise manner "),
             HumanMessage(content=prompt)
